@@ -1,0 +1,18 @@
+<div class="container-fluid">
+	<div class="jumbotron">
+		<h1>Funko Collecting</h1>
+		<button class="btn" [routerLink]="['/']">Home</button>
+		<button class="btn" [routerLink]="['/new']">Add Pop</button>	
+	</div>
+	<div class="row">
+		<div class="col-2">
+			<p>Dragon Ball</p>
+			<p>My Hero Academia</p>
+			<p>The Office</p>
+			<p>Actual functionality coming soon!</p>
+		</div>
+		<div class="col-10">
+			<router-outlet></router-outlet>
+		</div>
+	</div>
+</div>

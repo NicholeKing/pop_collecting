@@ -1,0 +1,17 @@
+<div class="container-fluid">
+	<div *ngFor="let fpop of pops">
+		<div class="row" style="margin-bottom: 50px;">
+			<div class="col-4">
+				<img src="{{ fpop.img }}" alt="pop" width="200px">
+			</div>
+			<div class="col-8">
+				<h3>{{ fpop.name }}</h3>
+				<h5>From: {{ fpop.series }}</h5>
+				<h5>#{{ fpop.num }}</h5>
+				<h5>Chase: {{ fpop.chase }}</h5>
+				<p><button class="btn" [routerLink]="['/edit', fpop._id]">Edit</button><button class="btn" (click)="removePop(fpop._id)">Remove</button></p>
+			</div>
+		</div>
+	</div>
+	<router-outlet></router-outlet>
+</div>

@@ -1,0 +1,9 @@
+* {
+	font-family: 'Lato', sans-serif;	
+}
+
+button {
+	color: white;
+	margin-right: 10px;
+	background-color: #0d4edc;
+}

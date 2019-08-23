@@ -1,0 +1,32 @@
+<div class="container-fluid">
+	<form (submit)="updatePop()" class="col-6">
+		<div class="form-group">
+			<label>Name: </label>
+			<input class="form-control" type="text" name="fpop.name" [(ngModel)]="fpop.name">
+			<span style="color:red;" *ngIf="errors.name">{{ errors.name.message }}</span>
+		</div>
+		<div class="form-group">
+			<label>Series: </label>
+			<input class="form-control" type="text" name="fpop.series" [(ngModel)]="fpop.series">
+			<span style="color:red;" *ngIf="errors.series">{{ errors.series.message }}</span>
+		</div>
+		<div class="form-group">
+			<label>Number: </label>
+			<input class="form-control" type="number" name="fpop.num" [(ngModel)]="fpop.num">
+			<span style="color:red;" *ngIf="errors.num">{{ errors.num.message }}</span>
+		</div>
+		<div class="form-group">
+			<label>Chase Figure: </label>&nbsp;
+			<select class="form-control" name="fpop.chase" [(ngModel)]="fpop.chase">
+				<option>Yes</option>
+				<option>No</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label>Picture: </label>
+			<input class="form-control" type="text" name="fpop.img" [(ngModel)]="fpop.img">
+			<span style="color:red;" *ngIf="errors.img">{{ errors.img.message }}</span>
+		</div>
+		<button class="btn" type="submit">Update Pop</button>
+	</form>
+</div>
